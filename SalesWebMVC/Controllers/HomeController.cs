@@ -15,7 +15,8 @@ namespace SalesWebMVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var product = new Product() {Id = 2, Name = "Mouse" };
+            return View(product);
         }
 
         public IActionResult Privacy()
