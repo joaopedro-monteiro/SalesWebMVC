@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace SalesWebMVC.Models
 {
@@ -8,12 +9,16 @@ namespace SalesWebMVC.Models
         public string? Name { get; set; }
 
         [DisplayName("E-mail")]
+        [DataType(DataType.EmailAddress)]
         public string? Email { get; set; }
 
         [DisplayName("Birth date")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime birthDate { get; set; }
 
         [DisplayName("Base salary")]
+        [DisplayFormat(DataFormatString = "{0:F2}")]
         public double baseSalary { get; set; }
 
         [DisplayName("Category")]
