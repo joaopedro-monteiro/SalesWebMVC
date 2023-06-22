@@ -2,7 +2,6 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Projeto de Cadastro de Departamentos, Vendedores e Vendas</title>
 </head>
 <body>
   <h1>Projeto de Cadastro de Departamentos, Vendedores e Vendas</h1>
