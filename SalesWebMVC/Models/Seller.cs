@@ -6,19 +6,28 @@ namespace SalesWebMVC.Models
     public class Seller
     {
         public int Id { get; set; }
+
+        [Required(ErrorMessage = "'{0}' é obrigatório.")]
+        [StringLength(60, MinimumLength = 3, ErrorMessage = "O tamanho do nome deve ter entre 3 e 60 caractéres.")]
         public string? Name { get; set; }
 
+        [Required(ErrorMessage = "'{0}' é obrigatório.")]
+        [EmailAddress(ErrorMessage = "Entre com um e-mail válido")]
         [DisplayName("E-mail")]
         [DataType(DataType.EmailAddress)]
         public string? Email { get; set; }
 
+        [Required(ErrorMessage = "'{0}' é obrigatório.")]
         [DisplayName("Birth date")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime birthDate { get; set; }
 
+        [Required(ErrorMessage = "'{0}' é obrigatório.")]
+        [Range(100.0, 50000.0, ErrorMessage = "O salário deve estar entre {1} e {2}.")]
         [DisplayName("Base salary")]
-        [DisplayFormat(DataFormatString = "{0:F2}")]
+        //[DisplayFormat(DataFormatString = "{0:F2}")]
+        [DataType(DataType.Currency)]
         public double baseSalary { get; set; }
 
         [DisplayName("Category")]

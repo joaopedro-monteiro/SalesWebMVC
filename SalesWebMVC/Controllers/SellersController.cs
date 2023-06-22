@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using SalesWebMVC.Data;
 using SalesWebMVC.Models;
 
@@ -145,19 +146,19 @@ namespace SalesWebMVC.Controllers
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            if (_context.Seller == null)
-            {
-                return Problem("Entity set 'SalesWebMVCContext.Seller'  is null.");
-            }
-            var seller = await _context.Seller.FindAsync(id);
-            if (seller != null)
-            {
-                _context.Seller.Remove(seller);
-            }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+        {        
+                if (_context.Seller == null)
+                {
+                    return Problem("Entity set 'SalesWebMVCContext.Seller'  is null.");
+                }
+                var seller = await _context.Seller.FindAsync(id);
+                if (seller != null)
+                {
+                    _context.Seller.Remove(seller);
+                }
+
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));                  
         }
 
         private bool SellerExists(int id)
