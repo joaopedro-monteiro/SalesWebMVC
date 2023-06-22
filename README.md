@@ -26,8 +26,11 @@
     <li>HTML5: Linguagem de marcação utilizada para estruturar o conteúdo do site.</li>
     <li>CSS3: Folhas de estilo em cascata utilizadas para estilizar o layout e a aparência visual do site.</li>
     <li>JavaScript: Linguagem de programação utilizada para adicionar interatividade e funcionalidades ao site.</li>
-    <li>Framework XYZ: Exemplo de um framework utilizado no projeto (caso aplicável).</li>
-    <li>Outras bibliotecas e tecnologias relevantes utilizadas no desenvolvimento.</li>
+    <li>C#: Linguagem de programação utilizada para desenvolver a lógica de negócio e a interação com o banco de dados.</li>
+    <li>.NET: Plataforma de desenvolvimento que fornece um ambiente de execução unificado para diversos tipos de aplicativos, incluindo aplicativos web.</li>
+    <li>ASP.NET Core MVC: Framework utilizado para criar a aplicação web e gerenciar o fluxo de requisições e respostas.</li>
+    <li>Entity Framework: Framework de mapeamento objeto-relacional (ORM) utilizado para mapear as entidades do sistema para a base de dados e realizar operações de persistência.</li>
+    <li>MySQL: Sistema de gerenciamento de banco de dados relacional utilizado para armazenar os dados do sistema.</li>
   </ul>
   
   <h2>Como Utilizar</h2>
@@ -36,7 +39,7 @@
   
   <ol>
     <li>Clone este repositório em sua máquina local.</li>
-    <li>Abra o arquivo "index.html" em seu navegador.</li>
+    <li>Compile a aplicação.</li>
     <li>Explore as diferentes funcionalidades do site e cadastre as informações necessárias.</li>
     <li>Utilize a pesquisa filtrada para visualizar as vendas de acordo com seus critérios.</li>
   </ol>
@@ -44,3 +47,5 @@
   <h2>Contribuição</h2>
   
   <p>Contribuições são bem-vindas! Se você encontrou algum problema, tem sugestões de melhorias ou deseja adicionar novas funcionalidades, sinta-se à vontade para abrir um Pull Request ou criar uma Issue neste repositório.</p>
+
+  <p>ATENÇÃO! ESTE PROJETO ESTÁ EM WIP (WORK IN PROGRESS)</p>
